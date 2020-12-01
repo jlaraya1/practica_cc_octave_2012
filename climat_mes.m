@@ -35,14 +35,19 @@
 
 function mensual=climat_mes(A,m,n)
 
-%+++++++++++++++++MENSUALES+++++++++++++++++++++++++
 
-e=find(A(:,m)==1)'  ;ene=A(e,:);e=find(A(:,m)==2)'  ;feb=A(e,:);
-e=find(A(:,m)==3)'  ;mar=A(e,:);e=find(A(:,m)==4)'  ;abr=A(e,:);
-e=find(A(:,m)==5)'  ;may=A(e,:);e=find(A(:,m)==6)'  ;jun=A(e,:);
-e=find(A(:,m)==7)'  ;jul=A(e,:);e=find(A(:,m)==8)'  ;ago=A(e,:);
-e=find(A(:,m)==9)'  ;sep=A(e,:);e=find(A(:,m)==10)' ;oct=A(e,:);
-e=find(A(:,m)==11)' ;nov=A(e,:);e=find(A(:,m)==12)' ;dic=A(e,:);
+
+
+
+
+%+++++++++++++++++Complete su codigo aqui+++++++++++++++++++++++++
+
+e=find(A(:,m)==1)'  ;ene=A(e,:)
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
 
 
 promedios_mes=[mean(ene(:,n));mean(feb(:,n));mean(mar(:,n));
