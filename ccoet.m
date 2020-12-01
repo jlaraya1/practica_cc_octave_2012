@@ -11,9 +11,11 @@
 %     bienvenido.m
 %     grafDatos.m
 %     saltos.m
+%     picos.m
 %     cotas.m
+%     anomalias.m
 %     estadisticas.m
-
+%     repetidos.m
 
 %Para esta práctica se incluyen dos archivos de datos horarios y diarios. El primero
 %corresponde a datos horarios y está espaciado por columnas:
@@ -45,15 +47,7 @@ clear all; close all; clc
 % Complete bienvenido.m 
 fprintf('Corriendo bienvenido.m ... \n');
 fprintf('Matriz identidad de 10x10 : \n');
-
-
-
-%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-%COMPLETE CODIGO DE LA FUNCION SIGUIENTE:puede usar la funcion "eye"
-%. Si desconoce su significado, puede digitar "help eye" en la consola 
-%de Octave
 bienvenido()
-%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 fprintf('Programa pausado. Presione "Enter" para seguir.\n');
 pause;
@@ -64,16 +58,10 @@ data_hor = load('temp_hora.txt');
 X = data_hor(:, 5); y = data_hor(:, 6);
 m = length(y); % numero de filas
 
-
-
-
 % Graficar datos
-%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%===================================================================
 % Note: Usted tiene que completar este código en  grafDatos.m
 grafDatos(X, y);
-%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
 
 fprintf('Programa detenido. Presione enter para continuar.\n');
 pause;

@@ -16,7 +16,9 @@ function grafDatos(x, y)
 
 figure; % abrir una nueva ventana para la figura
 
-
+plot(x, y, 'rx', 'MarkerSize', 10);
+xlabel('contador');
+ylabel('Temperatura horaria (ºC)');
 
 % ============================================================
 

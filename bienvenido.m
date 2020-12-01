@@ -3,8 +3,19 @@ function A = bienvenido()
 %para definir una matriz identidad de dimensiones 10x10 
 
 
+
+
+
 % ============= ESCRIBA SU CODIGO AQUI ==============
 % Instrucciones: Retorna una matriz identidad de dimensiones 10x10  
+
+
+A = eye(10);
+
+
+
+
+
 
 
 
